@@ -108,7 +108,7 @@ h2{
     align-items: center;
     justify-self: center;
     margin:0 auto;
-    width:80%;
+    width:100%;
     height:90vh;
     max-width: 1300px;
     padding:0 13%;
@@ -156,13 +156,14 @@ h2{
 .about-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width:80%;
+    width:100%;
     height:90vh;
     z-index: 1;
     margin:0 auto;
     max-width: 1300px;
     align-items: center;
     justify-self: center;
+    overflow-x: hidden;
 }
 .about-container .img-container img{
     width:100%;
@@ -197,13 +198,14 @@ h2{
 .safety-container{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    width:80%;
+    width:100%;
     height:90vh;
     z-index: 1;
     margin:0 auto;
     max-width: 1300px;
     align-items: center;
     justify-self: center;
+    overflow-x: hidden;
 }
 .safety-container .img-container img{
     width:100%;
@@ -283,6 +285,7 @@ h2{
     width:100%;
     padding:0 13%;
     height:90vh;
+    overflow-x: hidden;
 }
 .container-section .img-container img{
     width:100%;
@@ -365,6 +368,7 @@ h2{
     max-width: 1300px;
     z-index: 1;
     padding:0 13%;
+    overflow-x: hidden;
 }
 @media (max-width:991px){
     .navbar-container{
@@ -492,5 +496,34 @@ h2{
     .footer-container .content-container{
         display:grid;
         grid-template-columns: auto;
+    }
+}
+@media (max-width: 580px){
+    .home-container .img-container{
+        margin-top: 25px;
+    }
+    .safety-container .img-container img{
+       width:85%;
+       margin-top: 25px;
+       margin-left: 15px;
+    }
+    .mobile .about-container{
+        overflow-y: hidden;
+        height:100vh;
+        margin-top: 44%;
+    }
+    .safety-container{
+        overflow-y: hidden;
+        height:100vh;
+        margin-top: 10%;
+        margin-bottom: 11%;
+    }
+    .mobile .container-section{
+        overflow-y: hidden;
+        margin-top: 22%;
+        height:100vh;
+    }
+    .mobile .container-section .img-container img{
+        width:80%;
     }
 }
